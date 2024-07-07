@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Scheduling - Employee Attendance Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Login</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="reports.html">Reports</a>
+        <a href="leave.html">Leave Management</a>
+        <a href="overtime.html">Overtime Tracking</a>
+        <a href="shift.html">Shift Scheduling</a>
+    </nav>
+    <section id="shift-scheduling">
+        <h2>Shift Scheduling</h2>
+        <form id="shift-form">
+            <label for="employee-name-shift">Employee Name:</label>
+            <input type="text" id="employee-name-shift" required>
+            <label for="shift-time">Shift Time:</label>
+            <input type="datetime-local" id="shift-time" required>
+            <button type="submit">Schedule Shift</button>
+        </form>
+        <ul id="shift-list"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
